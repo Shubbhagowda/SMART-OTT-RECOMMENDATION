@@ -77,3 +77,23 @@ if __name__ == "__main__":
 
     print("\nCheapest Platform:",
           get_cheapest_platform())
+    def compare_monthly_prices():
+    plans = get_all_plans()
+    result = {}
+
+    for platform, platform_plans in plans.items():
+        monthly_prices = []
+
+        for plan in platform_plans:
+            price = plan["price"]
+            validity = plan["validity"]
+
+            months = int(validity.split()[0])
+
+            if months > 0:
+                monthly_prices.append(price / months)
+
+        if monthly_prices:
+            result[platform] = round(min(monthly_prices), 2)
+
+    return result
