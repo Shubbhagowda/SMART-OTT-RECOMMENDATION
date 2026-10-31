@@ -62,21 +62,6 @@ def get_cheapest_platform():
         return None
 
     return min(prices, key=prices.get)
-
-
-if __name__ == "__main__":
-    print("OTT PLATFORM COMPARISON")
-    print("-----------------------")
-
-    for item in compare_platforms():
-        print("\nPlatform:", item["platform"])
-        print("Starting Price: ₹", item["starting_price"])
-        print("Languages:", ", ".join(item["languages"]))
-        print("Genres:", ", ".join(item["genres"]))
-        print("Content Types:", ", ".join(item["content_types"]))
-
-    print("\nCheapest Platform:",
-          get_cheapest_platform())
     def compare_monthly_prices():
     plans = get_all_plans()
     result = {}
@@ -97,3 +82,19 @@ if __name__ == "__main__":
             result[platform] = round(min(monthly_prices), 2)
 
     return result
+
+
+if __name__ == "__main__":
+    print("OTT PLATFORM COMPARISON")
+    print("-----------------------")
+
+    for item in compare_platforms():
+        print("\nPlatform:", item["platform"])
+        print("Starting Price: ₹", item["starting_price"])
+        print("Languages:", ", ".join(item["languages"]))
+        print("Genres:", ", ".join(item["genres"]))
+        print("Content Types:", ", ".join(item["content_types"]))
+
+    print("\nCheapest Platform:",
+          get_cheapest_platform())
+  
