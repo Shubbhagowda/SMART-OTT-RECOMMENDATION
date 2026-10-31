@@ -7,7 +7,8 @@ from comparison import (
     compare_languages,
     compare_genres,
     compare_platforms,
-    get_cheapest_platform
+    get_cheapest_platform,
+    compare_monthly_prices
 )
 
 
@@ -49,6 +50,14 @@ class TestOTTComparison(unittest.TestCase):
 
         self.assertIsNotNone(cheapest)
         self.assertIsInstance(cheapest, str)
+    def test_compare_monthly_prices(self):
+        monthly_prices = compare_monthly_prices()
+
+        self.assertIsInstance(monthly_prices, dict)
+        self.assertGreater(len(monthly_prices), 0)
+
+        for price in monthly_prices.values():
+            self.assertGreater(price, 0)
 
 
 if __name__ == "__main__":
