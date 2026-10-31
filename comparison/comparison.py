@@ -62,6 +62,9 @@ def get_cheapest_platform():
         return None
 
     return min(prices, key=prices.get)
+
+
+# Monthly Price Comparison
 def compare_monthly_prices():
     plans = get_all_plans()
     result = {}
@@ -82,8 +85,7 @@ def compare_monthly_prices():
             result[platform] = round(min(monthly_prices), 2)
 
     return result
-    
-   
+
 
 if __name__ == "__main__":
     print("OTT PLATFORM COMPARISON")
@@ -96,6 +98,7 @@ if __name__ == "__main__":
         print("Genres:", ", ".join(item["genres"]))
         print("Content Types:", ", ".join(item["content_types"]))
 
-    print("\nCheapest Platform:",
-          get_cheapest_platform())
-  
+    print("\nCheapest Platform:", get_cheapest_platform())
+
+    print("\nMonthly Price Comparison:")
+    print(compare_monthly_prices())
