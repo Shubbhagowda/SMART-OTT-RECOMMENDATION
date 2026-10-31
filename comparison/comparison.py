@@ -62,9 +62,6 @@ def get_cheapest_platform():
         return None
 
     return min(prices, key=prices.get)
-
-
-# Monthly Price Comparison
 def compare_monthly_prices():
     plans = get_all_plans()
     result = {}
