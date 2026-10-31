@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTT Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <h2>OTT<span>Smart</span></h2>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="login.html">Logout</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Find Your Best OTT Plan</h1>
+            <p>Tell us your preferences to get smart recommendations.</p>
+
+            <form id="preferenceForm">
+
+                <h3>Choose Your Favourite Genres</h3>
+                <br>
+
+                <label><input type="checkbox" name="genre" value="Action"> Action</label>
+                <label><input type="checkbox" name="genre" value="Comedy"> Comedy</label>
+                <label><input type="checkbox" name="genre" value="Drama"> Drama</label>
+                <label><input type="checkbox" name="genre" value="Thriller"> Thriller</label>
+                <label><input type="checkbox" name="genre" value="Romance"> Romance</label>
+
+                <br><br>
+
+                <h3>Select Your Preferred Language</h3>
+                <br>
+
+                <select id="language" required>
+                    <option value="">Select Language</option>
+                    <option value="English">English</option>
+                    <option value="Hindi">Hindi</option>
+                    <option value="Kannada">Kannada</option>
+                    <option value="Tamil">Tamil</option>
+                    <option value="Telugu">Telugu</option>
+                    <option value="Malayalam">Malayalam</option>
+                </select>
+
+                <br><br>
+
+                <h3>Monthly Budget (₹)</h3>
+                <br>
+
+                <input type="number" id="budget"
+                       placeholder="Enter your budget"
+                       min="1" required>
+
+                <br><br>
+
+                <button type="submit" class="start-btn">
+                    Get Recommendations
+                </button>
+
+            </form>
+        </div>
+    </section>
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #10101c;
+    color: white;
+}
+
+/* Navigation bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #191929;
+}
+
+.navbar h2 {
+    color: #ffffff;
+    font-size: 27px;
+}
+
+.navbar h2 span {
+    color: #e50914;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    color: #e50914;
+}
+
+.register-btn {
+    background: #e50914;
+    padding: 10px 18px;
+    border-radius: 6px;
+}
+
+/* Hero section */
+.hero {
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    padding: 60px 8%;
+    background: linear-gradient(
+        90deg,
+        #191929,
+        #332044,
+        #10101c
+    );
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #cccccc;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.start-btn {
+    display: inline-block;
+    background: #e50914;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.start-btn:hover {
+    background: #b80710;
+}
+
+/* OTT platforms */
+.platforms {
+    padding: 55px 8%;
+    text-align: center;
+}
+
+.platforms h2 {
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+
+.platform-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.platform-card {
+    background: #202033;
+    width: 260px;
+    padding: 35px 20px;
+    border-radius: 12px;
+    border: 1px solid #38384e;
+    transition: 0.3s;
+}
+
+.platform-card:hover {
+    transform: translateY(-8px);
+    border-color: #e50914;
+}
+
+.platform-card h3 {
+    color: #ff525b;
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+.platform-card p {
+    color: #cccccc;
+    line-height: 1.5;
+}
+
+/* Footer */
+footer {
+    background: #191929;
+    text-align: center;
+    padding: 22px;
+    color: #aaaaaa;
+}
+
+/* Mobile responsive */
+@media (max-width: 650px) {
+    .navbar {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .nav-links {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+}
