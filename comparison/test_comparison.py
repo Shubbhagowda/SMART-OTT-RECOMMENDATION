@@ -50,7 +50,7 @@ class TestOTTComparison(unittest.TestCase):
 
         self.assertIsNotNone(cheapest)
         self.assertIsInstance(cheapest, str)
-    def test_compare_monthly_prices(self):
+   def test_compare_monthly_prices(self):
         monthly_prices = compare_monthly_prices()
 
         self.assertIsInstance(monthly_prices, dict)
