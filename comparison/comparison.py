@@ -81,7 +81,8 @@ def compare_monthly_prices():
         if monthly_prices:
             result[platform] = round(min(monthly_prices), 2)
 
-    return result    
+    return result
+    
    
 
 if __name__ == "__main__":
