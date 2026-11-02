@@ -83,3 +83,39 @@ def get_all_platforms():
 
 def get_platform(platform_name):
     return OTT_PLATFORMS.get(platform_name)
+
+def get_platforms_by_language(language):
+    return {
+        name: details
+        for name, details in OTT_PLATFORMS.items()
+        if language.lower() in [
+            lang.lower() for lang in details["languages"]
+        ]
+    }
+
+
+def get_platforms_by_genre(genre):
+    return {
+        name: details
+        for name, details in OTT_PLATFORMS.items()
+        if genre.lower() in [
+            item.lower() for item in details["genres"]
+        ]
+    }
+
+
+def get_platforms_by_content_type(content_type):
+    return {
+        name: details
+        for name, details in OTT_PLATFORMS.items()
+        if content_type.lower() in [
+            item.lower() for item in details["content_types"]
+        ]
+    }
+
+if __name__ == "__main__":
+    print("All OTT Platforms:")
+    print(get_all_platforms())
+
+    print("\nNetflix Details:")
+    print(get_platform("Netflix"))
