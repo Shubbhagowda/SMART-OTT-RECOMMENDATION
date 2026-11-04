@@ -1,207 +1,206 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTT Smart | Find Your Perfect Subscription</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-body {
-    font-family: Arial, sans-serif;
-    background: #10101c;
-    color: white;
-}
+<body>
 
-/* Navigation bar */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 8%;
-    background: #191929;
-}
+    <!-- Navigation -->
+    <nav class="navbar">
+        <h2>OTT<span>Smart.</span></h2>
 
-.navbar h2 {
-    color: #ffffff;
-    font-size: 27px;
-}
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="#platforms">Platforms</a>
+            <a href="#genres">Genres</a>
+            <a href="#budget">Budget Planner</a>
+            <a href="login.html">Login</a>
+            <a href="register.html" class="register-btn">Get Started</a>
+        </div>
+    </nav>
 
-.navbar h2 span {
-    color: #e50914;
-}
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="welcome-tag">✨ Your Personal OTT Guide</span>
 
-.nav-links {
-    display: flex;
-    align-items: center;
-    gap: 25px;
-}
+            <h1>Discover Entertainment<br>
+                That Fits <span>Your Budget.</span>
+            </h1>
 
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 15px;
-}
+            <p>
+                Find the perfect streaming subscriptions based
+                on your favourite genres, languages and budget.
+                Enjoy more entertainment while spending wisely.
+            </p>
 
-.nav-links a:hover {
-    color: #e50914;
-}
+            <a href="register.html" class="start-btn">
+                Explore Recommendations →
+            </a>
+        </div>
 
-.register-btn {
-    background: #e50914;
-    padding: 10px 18px;
-    border-radius: 6px;
-}
+        <div class="hero-art">
+            <div class="art-card">
+                <span class="art-icon">🎬</span>
+                <h3>Your Entertainment</h3>
+                <p>One place. Endless choices.</p>
+                <div class="art-decoration">🍿 ✨ 🎥</div>
+            </div>
+        </div>
+    </section>
 
-/* Hero section */
-.hero {
-    min-height: 450px;
-    display: flex;
-    align-items: center;
-    padding: 60px 8%;
-    background: linear-gradient(
-        90deg,
-        #191929,
-        #332044,
-        #10101c
-    );
-}
+    <!-- Search Section -->
+    <section class="search-section">
+        <h2>What Do You Feel Like Watching?</h2>
+        <p>Explore your favourite entertainment platforms.</p>
 
-.hero-content {
-    max-width: 650px;
-}
+        <div class="search-box">
+            <span>🔍</span>
+            <input type="text"
+                   placeholder="Search movies or OTT platforms...">
+            <button type="button">Search</button>
+        </div>
+    </section>
 
-.hero h1 {
-    font-size: 48px;
-    line-height: 1.2;
-    margin-bottom: 20px;
-}
+    <!-- OTT Platforms -->
+    <section id="platforms" class="platforms">
+        <div class="section-heading">
+            <span>EXPLORE STREAMING</span>
+            <h2>Popular OTT Platforms</h2>
+            <p>Discover entertainment from different streaming services.</p>
+        </div>
 
-.hero p {
-    font-size: 18px;
-    color: #cccccc;
-    line-height: 1.6;
-    margin-bottom: 30px;
-}
+        <div class="platform-container">
 
-.start-btn {
-    display: inline-block;
-    background: #e50914;
-    color: white;
-    padding: 14px 28px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: bold;
-}
+            <div class="platform-card">
+                <div class="platform-icon">N</div>
+                <h3>Netflix</h3>
+                <p>Movies, series and exclusive originals.</p>
+            </div>
 
-.start-btn:hover {
-    background: #b80710;
-}
+            <div class="platform-card">
+                <div class="platform-icon">P</div>
+                <h3>Prime Video</h3>
+                <p>Movies, shows and entertainment.</p>
+            </div>
 
-/* OTT platforms */
-.platforms {
-    padding: 55px 8%;
-    text-align: center;
-}
+            <div class="platform-card">
+                <div class="platform-icon">J</div>
+                <h3>JioHotstar</h3>
+                <p>Sports, movies and exciting series.</p>
+            </div>
 
-.platforms h2 {
-    font-size: 30px;
-    margin-bottom: 35px;
-}
+            <div class="platform-card">
+                <div class="platform-icon">Z</div>
+                <h3>Zee5</h3>
+                <p>Regional entertainment and originals.</p>
+            </div>
 
-.platform-container {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    flex-wrap: wrap;
-}
+            <div class="platform-card">
+                <div class="platform-icon">S</div>
+                <h3>SonyLIV</h3>
+                <p>Shows, movies and live entertainment.</p>
+            </div>
 
-.platform-card {
-    background: #202033;
-    width: 260px;
-    padding: 35px 20px;
-    border-radius: 12px;
-    border: 1px solid #38384e;
-    transition: 0.3s;
-}
+        </div>
+    </section>
 
-.platform-card:hover {
-    transform: translateY(-8px);
-    border-color: #e50914;
-}
+    <!-- Genres -->
+    <section id="genres" class="genres-section">
+        <div class="section-heading">
+            <span>YOUR INTERESTS</span>
+            <h2>Explore Your Favourite Genres</h2>
+            <p>Choose what you love watching.</p>
+        </div>
 
-.platform-card h3 {
-    color: #ff525b;
-    font-size: 23px;
-    margin-bottom: 12px;
-}
+        <div class="genre-container">
+            <div class="genre-card">🎭 Drama</div>
+            <div class="genre-card">😂 Comedy</div>
+            <div class="genre-card">👻 Thriller</div>
+            <div class="genre-card">🚀 Sci-Fi</div>
+            <div class="genre-card">❤️ Romance</div>
+            <div class="genre-card">🎬 Action</div>
+            <div class="genre-card">🕵️ Mystery</div>
+            <div class="genre-card">🏰 Fantasy</div>
+        </div>
+    </section>
 
-.platform-card p {
-    color: #cccccc;
-    line-height: 1.5;
-}
+    <!-- Budget Planner -->
+    <section id="budget" class="budget-section">
+        <div class="budget-content">
+            <span>💜 SPEND SMARTER</span>
+            <h2>Entertainment Without<br>Overspending!</h2>
 
-/* Footer */
-footer {
-    background: #191929;
-    text-align: center;
-    padding: 22px;
-    color: #aaaaaa;
-}
+            <p>
+                Find subscriptions that match your monthly
+                entertainment budget. Get smarter suggestions
+                and avoid unnecessary spending.
+            </p>
 
-/* Mobile responsive */
-@media (max-width: 650px) {
-    .navbar {
-        flex-direction: column;
-        gap: 18px;
-    }
+            <a href="register.html" class="budget-btn">
+                Find My Perfect Plan →
+            </a>
+        </div>
 
-    .nav-links {
-        gap: 12px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+        <div class="budget-art">
+            <div class="budget-circle">
+                <span>💰</span>
+                <h3>Smart Budget</h3>
+                <p>Better choices, better entertainment.</p>
+            </div>
+        </div>
+    </section>
 
-    .hero h1 {
-        font-size: 34px;
-    }
-}
-/* Search Section */
-.search-section {
-    padding: 40px 8%;
-    text-align: center;
-}
+    <!-- Why Choose Us -->
+    <section class="features-section">
+        <div class="section-heading">
+            <span>WHY OTT SMART?</span>
+            <h2>Entertainment Made Smarter</h2>
+        </div>
 
-.search-section input {
-    width: 70%;
-    padding: 14px;
-    border-radius: 8px;
-    border: 1px solid #38384e;
-    background: #202033;
-    color: white;
-}
+        <div class="features-container">
 
-/* Recommendation Section */
-.recommendations {
-    padding: 50px 8%;
-    text-align: center;
-}
+            <div class="feature-card">
+                <span>🤖</span>
+                <h3>Smart Recommendations</h3>
+                <p>Discover platforms based on your interests.</p>
+            </div>
 
-.recommendation-card {
-    background: #202033;
-    padding: 25px;
-    border-radius: 12px;
-    margin: 15px;
-    border: 1px solid #38384e;
-}
+            <div class="feature-card">
+                <span>💸</span>
+                <h3>Budget Friendly</h3>
+                <p>Find suitable subscriptions within your budget.</p>
+            </div>
 
-/* Budget Section */
-.budget-section {
-    padding: 40px 8%;
-    text-align: center;
-}
+            <div class="feature-card">
+                <span>📊</span>
+                <h3>Easy Comparison</h3>
+                <p>Compare subscription plans in one place.</p>
+            </div>
 
-.budget-section input {
-    padding: 12px;
-    border-radius: 6px;
-    background: #202033;
-    color: white;
-    border: 1px solid #38384e;
-}
+            <div class="feature-card">
+                <span>🎯</span>
+                <h3>Personalized Choices</h3>
+                <p>Get suggestions according to your preferences.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h2>OTT<span>Smart.</span></h2>
+        <p>Your entertainment, your choice, your budget.</p>
+        <p class="copyright">
+            © 2026 Smart OTT Recommendation System. All rights reserved.
+        </p>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
