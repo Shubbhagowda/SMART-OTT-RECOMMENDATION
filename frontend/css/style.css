@@ -163,3 +163,45 @@ footer {
         font-size: 34px;
     }
 }
+/* Search Section */
+.search-section {
+    padding: 40px 8%;
+    text-align: center;
+}
+
+.search-section input {
+    width: 70%;
+    padding: 14px;
+    border-radius: 8px;
+    border: 1px solid #38384e;
+    background: #202033;
+    color: white;
+}
+
+/* Recommendation Section */
+.recommendations {
+    padding: 50px 8%;
+    text-align: center;
+}
+
+.recommendation-card {
+    background: #202033;
+    padding: 25px;
+    border-radius: 12px;
+    margin: 15px;
+    border: 1px solid #38384e;
+}
+
+/* Budget Section */
+.budget-section {
+    padding: 40px 8%;
+    text-align: center;
+}
+
+.budget-section input {
+    padding: 12px;
+    border-radius: 6px;
+    background: #202033;
+    color: white;
+    border: 1px solid #38384e;
+}
